@@ -1,4 +1,4 @@
-package pool;
+package workintech.pool;
 
 public class Rectangle {
 

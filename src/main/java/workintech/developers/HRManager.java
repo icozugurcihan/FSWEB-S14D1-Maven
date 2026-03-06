@@ -1,14 +1,16 @@
-package developers;
+package workintech.developers;
 
 public class HRManager extends Employee {
 
-    private JuniorDeveloper[] juniorDevelopers;
-    private MidDeveloper[] midDevelopers;
-    private SeniorDeveloper[] seniorDevelopers;
+    private static final int juniorSize = 10;
+    private static final int midSize = 10;
+    private static final int seniorSize = 10;
 
-    public HRManager(int id, String name, double salary,
-                     int juniorSize, int midSize, int seniorSize) {
+    private final JuniorDeveloper[] juniorDevelopers;
+    private final MidDeveloper[] midDevelopers;
+    private final SeniorDeveloper[] seniorDevelopers;
 
+    public HRManager(int id, String name, double salary) {
         super(id, name, salary);
 
         juniorDevelopers = new JuniorDeveloper[juniorSize];
@@ -22,7 +24,7 @@ public class HRManager extends Employee {
         setSalary(getSalary() + 4000);
     }
 
-    // 🔹 Overloaded Methods
+    // Overloaded Methods
 
     public void addEmployee(int index, JuniorDeveloper dev) {
         addToArray(juniorDevelopers, index, dev);

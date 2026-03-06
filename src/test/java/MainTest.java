@@ -1,18 +1,20 @@
-import com.workintech.cylinder.Circle;
-import com.workintech.cylinder.Cylinder;
-import com.workintech.developers.*;
-import com.workintech.pool.Cuboid;
-import com.workintech.pool.Rectangle;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import workintech.cylinder.Circle;
+import workintech.cylinder.Cylinder;
+import workintech.developers.*;
+import workintech.pool.Cuboid;
+import workintech.pool.Rectangle;
 
 import java.lang.reflect.Field;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 @ExtendWith(ResultAnalyzer.class)

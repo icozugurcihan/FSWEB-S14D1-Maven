@@ -1,11 +1,11 @@
-package pool;
+package workintech.cylinder;
 
-public class Cuboid extends Rectangle {
+public class Cylinder extends Circle {
 
     private double height;
 
-    public Cuboid(double width, double length, double height) {
-        super(width, length);
+    public Cylinder(double radius, double height) {
+        super(radius);
         this.height = height < 0 ? 0 : height;
     }
 
